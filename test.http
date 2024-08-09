@@ -1,0 +1,41 @@
+### Hello World
+GET http://localhost:8000/api
+Content-Type: application/json
+
+### Get User By Id
+GET http://localhost:8000/api/user/1
+Content-Type: application/json
+
+### Get All Products
+GET http://localhost:8000/api/product
+Content-Type: application/json
+
+### Create Product
+POST http://localhost:8000/api/product
+Content-Type: application/json
+
+{
+    "name": "Laptop Asus",
+    "price": 4000000,
+    "description": "New Asus Laptop", 
+    "image": "https://static.retailworldvn.com/Products/Images/12217/303691/laptop-asus-vivobook-14-celeron-n4020-4gb-256gb-win11-a416mao-fhd425-transparent-silver-1.jpg"
+}
+
+### Update Product
+PUT http://localhost:8000/api/product/8
+Content-Type: application/json
+
+{
+    "name": "Laptop Asus 2023",
+    "price": 3000000,
+    "description": "New Asus Laptop", 
+    "image": "https://static.retailworldvn.com/Products/Images/12217/303691/laptop-asus-vivobook-14-celeron-n4020-4gb-256gb-win11-a416mao-fhd425-transparent-silver-1.jpg"
+}
+
+### Update Product
+PATCH http://localhost:8000/api/product/price/8?price=3500000
+Content-Type: application/json
+
+### Delete Product
+DELETE http://localhost:8000/api/product/7
+Content-Type: application/json
